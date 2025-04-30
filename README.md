@@ -1,0 +1,3 @@
+## Code question 1
+
+Nel codice le variabili Hamburger e  secondHamburger fanno riferimento allo stesso oggetto e se modifichiamo le proprietà di secondHamburger, viene modificato lo stesso oggetto a cui punta anche hamburger. Quindi, quando stampiamo hamburger.name e secondHamburger.name, entrambe ci restituiranno in console "Double Cheese Burger". Questo perché si tratta di una copia di riferimento, ovvero non viene crerata una copia dell'oggetto, ma ci sarà solo un oggetto in memoria che ha cambiato le sue proprietà.
