@@ -10,3 +10,5 @@ In questo caso quando cerchiamo di fare una copia dell'oggetto, si tratta una co
 
 In questo codice vengono creati 3 oggetti. Si tratta  di una copia profonda perché viene fatta una copia completa dell'oggetto e tutti gli oggetti annidati dentro, grazie allo structuredClone che ci permette di gestire oggetti complessi. Questa volta ogni oggetto è completamente indipendente da hamburger e non condividono nessun riferimento a dati interni.
 
+## Code question 4
+Nel caso dell'oggetto chef non possiamo utilizzare né il metodo structuredClone né il metodo JSON.parse(JSON.stringify ()), questo perché entrambi non sono in grado di copiare le funzioni (in questo caso la funzione  makeBurger verrebbe persa). Quindi l'unica cosa che potremmo fare per clonare l'oggetto è quella di farlo manualmente. Per quanto riguarda l'oggetto restaurant il metodo più adatto per clonarlo è quello di utilizzare il metodo structuredClone perché è in grado di gestire oggetti annidati, date (perché vengono clonate come oggetto Date e non come stringa), valori booleani , stringhe e numeri.
